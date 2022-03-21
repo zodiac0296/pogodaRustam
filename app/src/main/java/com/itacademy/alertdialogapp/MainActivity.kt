@@ -55,9 +55,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun setImageView(image: String, view: ImageView){
-        val url: String = "http://openweathermap.org/img/wn/"
+        val url = "https://openweathermap.org/img/wn/"
         Picasso.get()
-            .load("$url$image@3x.png")
+            .load("$url$image@2x.png")
             .into(view)
 
     }
